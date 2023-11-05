@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family:centuryghotic;
+	src:url("../fuentes/SansSerifFLF.otf");
+}
+@font-face {
+	font-family:centuryghoticbold;
+	src:url("../fuentes/SansSerifBldFLF.otf")
+}
+
+a {
+	font-family:centuryghotic;
+}
+
+p {
+	font-family:centuryghotic;
+	color:white;
+	font-size:18px;
+}
+
+h1, h2, h3, h5 {
+	font-family:centuryghoticbold;
+}
+
+/* -- BOTON IR ARRIBA -- */
+.go-top-container {
+	position: fixed;
+	bottom:40px;
+	right: 40px;
+	width: 15px;
+	height: 15px;
+	z-index: -1;
+}
+
+.go-top-button{
+	width: 0;
+	height: 0;
+	border-width:3px;
+	border-color: #259D7D;
+	border-style: solid;
+	border-radius: 50%;
+	cursor: pointer;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .2s;
+	z-index: -1;
+}
+
+.go-top-button:hover{
+	border-width:3px;
+	border-color: #259D7D;
+	border-style: solid;
+ 	background: #259D7D;
+}
+
+.go-top-button i {
+	position: absolute;
+	font-size: 18px;
+	top:48%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: #259D7D; 
+	transition: .2s;
+}
+
+.go-top-button i:hover{
+	color:#FFFFFF;
+}
+
+.shows{
+	z-index: 10;
+}
+
+.shows .go-top-button {
+	animation: popup .3s ease-in-out;
+	width: 45px;
+	height: 45px;
+	z-index: 11;
+}
+
+.shows .go-top-button:hover {
+	width: 50px;
+	height: 50px;
+}
+
+.shows i{
+	transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+	0%{
+		width: 0;
+		height: 0;
+	}
+	50%{
+		width: 60px;
+		height: 60px;
+	}
+	100%{
+		width: 45px;
+		height: 45px;
+	}
+}
+/* -- BOTON IR ARRIBA -- */
+
+.navbar {
+	transition-duration: 0.5s;
+}
+
+.navbar-scrolled {
+	background-color:#044054;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+#menuLateral {
+	height: 500px;
+	background-color: #044054;
+}
+
+
+.btn {
+	font-family:centuryghoticbold;
+	height: 40px;
+	margin-top:5px;
+	color:#014059;
+	border-color: #259D7D;
+}
+
+.btn:hover {
+	background-color: #259D7D;
+	
+}
+
+#linkmovil:hover {
+	background-color: #259d7d;
+	border-color: #259d7d;
+}
+#linkmovil1:hover {
+	background-color: #259d7d;
+	border-color: #259d7d;
+}
+#linkmovil2:hover {
+	background-color: #259d7d;
+	border-color: #259d7d;
+}
+#linkmovil3:hover {
+	background-color: #259d7d;
+	border-color: #259d7d;
+}
+
+.fondo {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../Imagenes/ImagenBg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.conoce, .cotiza, .Sviendo {
+	background-color: #054155;
+	border-color:#054155;
+	color:#FFFFFF
+}
+.conoce:hover {
+	border-color:#259D7D;
+}
+.cotiza:hover {
+	border-color:#259D7D;
+	
+}
+	
+.bi {
+	font-size: 30px; 
+}
+	
+.bis {
+	font-size: 90px;
+}
+
+.Thistoria, .Tcaracterisitcas, .Tservicios, .Tgaleria, .Tcontacto {
+	color:#259D7D;
+}
+
+.Ct1, .Ct3, .Kt1, .Kt2, .Kt3 {
+	background-color: #054155;
+}
+
+.Ct2, .Pct2, .Ikt1, .Ikt2, .Ikt3 {
+	color:#054155;
+}
+
+.Kt1, .Kt2, .Kt3 {
+	border-color: #054155;
+}
+
+.card {
+	font-family:centuryghotic;
+	font-size:18px; 
+}
+
+.carousel-item {
+	max-height: 320px;
+	background-color: #054155;
+}
+
+.ImgServ {
+	opacity: 0.4;
+}
+
+.SVconoce, .SVcotiza, .Senviar {
+	background-color: #259D7D;
+	border-color:#259D7D;
+	color:#FFFFFF
+}
+.SVconoce:hover {
+	border-color:#054155;
+	background-color: #054155;
+}
+.SVcotiza:hover {
+	border-color:#054155;
+	background-color: #054155;
+}
+.Senviar:hover {
+	border-color:#054155;
+	background-color: #054155;
+}
+
+.carucelText{
+	max-height: 400px;
+}
+
+.Tarjeta{
+	background-color: #054155;
+}
+
+.Ttar{
+	color:#FFFFFF
+}
+
+#Servicios, #Contacto {
+	background-color: #F5F5F5;
+}
+
+#Galeria img{
+	width: 100%;
+	height: 330px;
+}
+
+.ImgGaleria:hover {
+	opacity: 0.5;
+}
+
+.modal-content {
+	border-width:thick;
+	border-color: #FFFFFF;
+}
+
+
+.TxGmodal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(1,27,35,0.61);
+	position: absolute;
+}
+
+.Iwha, .Imail, .Imap {
+	font-size: 52px;
+	color:#259D7D;
+}
+
+.Iwh, .Imai {
+	font-size: 40px;
+	color:#259D7D;
+}
+
+.TxiconC {
+	font-size: 12px;
+}
+
+footer {
+	background-color: #054155;
+}
+
+footer img{
+	width: 50%;
+}
+
+footer span {
+	font-family:centuryghoticbold;
+}
+
+.Txder {
+	font-size: 13px
+}
+
